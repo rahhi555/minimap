@@ -39,7 +39,7 @@ services:
     # command: yarn dev
     tty: true
     environment:
-      - GOOGLE_MAPS_API_KEY=AIzaSyByDlmTdTd4MKW8NzNJJIj1eSLqzOlaTp8
+      - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
 
   redis:
     image: redis:latest
