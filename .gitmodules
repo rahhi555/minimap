@@ -1,0 +1,12 @@
+[submodule "portfolio-api"]
+	path = portfolio-api
+	url = https://github.com/rahhi555/portfolio-api.git
+	branch = master
+[submodule "portfolio-front"]
+	path = portfolio-front
+	url = https://github.com/rahhi555/portfolio-front.git
+	branch = master
+[submodule "portfolio-terraform"]
+	path = portfolio-terraform
+	url = https://github.com/rahhi555/portfolio-terraform.git
+	branch = master
