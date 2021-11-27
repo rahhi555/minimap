@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0.23
+    container_name: portfolio-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./db/cunf.d:/etc/mysql/conf.d
+    command: '--default-authentication-plugin=mysql_native_password'
+    ports:
+      - "3306:3306"
+
+  api:
+    build:
+      context: ./api
+    container_name: portfolio-api
+    volumes:
+      - ./api:/api
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "3000:3000"
+    command: rake cmd:setup
+
+  front:
+    build:
+      context: ./front
+    container_name: portfolio-front
+    volumes:
+      - ./front:/front
+    ports:
+      - "80:80"
+    depends_on:
+      - firebase
+      - api
+    # command: yarn dev
+    tty: true
+    environment:
+      - GOOGLE_MAPS_API_KEY=AIzaSyByDlmTdTd4MKW8NzNJJIj1eSLqzOlaTp8
+
+  redis:
+    image: redis:latest
+    container_name: portfolio-redis
+
+  firebase:
+    build:
+      context: ./firebase
+    container_name: firebase
+    ports:
+      - "4000:4000"
+      - "9099:9099"
+    volumes:
+      - ./firebase:/opt/workspace
+    working_dir: /opt/workspace
+    command: "firebase emulators:start --import=./firebase/data --export-on-exit --project ucwork"
+    tty: true

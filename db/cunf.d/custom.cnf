@@ -1,0 +1,5 @@
+[mysqld]
+skip-host-cache
+skip-name-resolve
+# デフォルトのパスワードの暗号化形式を mysql_native_password にする。
+default_authentication_plugin=mysql_native_password
