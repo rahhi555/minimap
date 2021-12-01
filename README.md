@@ -57,6 +57,6 @@ TODOリストと位置情報をリアルタイムに紐付ける。
 |簡単ログインとGoogleログインを実装|
 
 ## ER図
-![er](./readme_images/ER図.png)
+![er](./readme_images/ER図.jpg)
 
 一旦プッシュ
