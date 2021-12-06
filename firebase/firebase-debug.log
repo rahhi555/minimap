@@ -1,23 +1,23 @@
-[debug] [2021-12-01T07:52:36.288Z] ----------------------------------------------------------------------
-[debug] [2021-12-01T07:52:36.292Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --import=./firebase/data --export-on-exit --project ucwork
-[debug] [2021-12-01T07:52:36.293Z] CLI Version:   9.16.5
-[debug] [2021-12-01T07:52:36.293Z] Platform:      linux
-[debug] [2021-12-01T07:52:36.293Z] Node Version:  v15.9.0
-[debug] [2021-12-01T07:52:36.302Z] Time:          Wed Dec 01 2021 07:52:36 GMT+0000 (Coordinated Universal Time)
-[debug] [2021-12-01T07:52:36.302Z] ----------------------------------------------------------------------
+[debug] [2021-12-06T01:01:07.104Z] ----------------------------------------------------------------------
+[debug] [2021-12-06T01:01:07.114Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --import=./firebase/data --export-on-exit --project ucwork
+[debug] [2021-12-06T01:01:07.115Z] CLI Version:   9.16.5
+[debug] [2021-12-06T01:01:07.115Z] Platform:      linux
+[debug] [2021-12-06T01:01:07.115Z] Node Version:  v15.9.0
+[debug] [2021-12-06T01:01:07.116Z] Time:          Mon Dec 06 2021 01:01:07 GMT+0000 (Coordinated Universal Time)
+[debug] [2021-12-06T01:01:07.116Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-12-01T07:52:36.461Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-06T01:01:07.266Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
 [debug] Failed to authenticate, have you run firebase login?
 [warn] ⚠  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
 [info] i  emulators: Starting emulators: auth {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth"}}
-[debug] [2021-12-01T07:52:36.583Z] [hub] writing locator at /tmp/hub-ucwork.json
+[debug] [2021-12-06T01:01:07.388Z] [hub] writing locator at /tmp/hub-ucwork.json
 [info] i  auth: Importing config from /opt/workspace/firebase/data/auth_export/config.json {"metadata":{"emulator":{"name":"database"},"message":"Importing config from /opt/workspace/firebase/data/auth_export/config.json"}}
 [info] i  auth: Importing accounts from /opt/workspace/firebase/data/auth_export/accounts.json {"metadata":{"emulator":{"name":"database"},"message":"Importing accounts from /opt/workspace/firebase/data/auth_export/accounts.json"}}
-[debug] [2021-12-01T07:52:46.439Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2021-12-01T07:52:46.439Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2021-12-01T07:52:46.440Z] Starting Emulator UI with command {"binary":"node","args":["/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2021-12-06T01:01:14.356Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-12-06T01:01:14.357Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-12-06T01:01:14.358Z] Starting Emulator UI with command {"binary":"node","args":["/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2021-12-01T07:52:46.599Z] Web / API server started at 0.0.0.0:4000
+[debug] [2021-12-06T01:01:14.595Z] Web / API server started at 0.0.0.0:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 0.0.0.0:4000\n"}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
