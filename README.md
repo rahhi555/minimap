@@ -1,5 +1,8 @@
 # minimap-portfolio
-自作のポートフォリオアプリ「[ミニマップ](https://www.hirabayashi.work)」のリポジトリです
+自作のポートフォリオアプリ「[ミニマップ](https://www.minimap.work)」のまとめリポジトリです。他のリポジトリは👇の３つ
+- [NuxtJSのリポジトリ](https://github.com/rahhi555/portfolio-front/tree/master)
+- [Railsのリポジトリ](https://github.com/rahhi555/portfolio-api/tree/master)
+- [terraformのリポジトリ](https://github.com/rahhi555/portfolio-terraform/tree/master)
 
 ## サービス概要
 現場で作業をする際に、離れた位置の人と仕事の進捗状況及び位置情報を共有できるサービスです。
@@ -32,10 +35,10 @@ TODOリストと位置情報をリアルタイムに紐付ける。
 
 ## 使用技術
 - フロントエンド
-  - Nuxtjs(2.15.8)
+  - NuxtJS(2.15.8)
   - TypeScript(4.2.4)
 - バックエンド
-  - RubyOnRails(6.0.4.1)
+  - Rails(6.0.4.1)
   - Ruby(3.0.2)
 - データベース
   - MySQL(8.0.23)
