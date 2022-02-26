@@ -57,10 +57,30 @@ TODOリストと位置情報をリアルタイムに紐付ける。
 ![インフラ構成図](./readme_images/インフラ構成図.jpg)
 
 ## 機能
-|ログイン|チュートリアル|Todoリスト
-|-|-|-|
-|![login](./readme_images/login.png)|![tutorial](./readme_images/チュートリアル.jpg)|![todo](./readme_images/todoリスト.jpg)
-|簡単ログインとGoogleログインを実装|実際に操作して体験できるチュートリアル|Todoリストを作成して作業を見える化
+|ログイン|
+|-|
+|![login](./readme_images/login.png)|
+|簡単ログインとGoogleログインを実装|
+
+|チュートリアル|
+|-|
+|![tutorial](./readme_images/チュートリアル.jpg)|
+|実際に操作して体験できるチュートリアル|
+
+|Todoリスト作成|
+|-|
+|![todo](./readme_images/todoリスト.jpg)|
+|Todoリストを作成して作業を見える化|
+
+|マップ作成|
+|-|
+|![map_edit](./readme_images/マップ編集.jpg)|
+|googleマップ上に平面図を作成し、実際の作業場所と一致できる|
+
+|作業実行|
+|-|
+|![map_show](./readme_images/マップ編集.jpg)|
+|todoに応じて平面図の色が変化し、一目で作業進行度が確認できる。リアルタイムに共有され、マーカーやピンをマップに書くことも可能|
 
 ## ER図
 ![er](./readme_images/ER図.jpg)
