@@ -57,12 +57,10 @@ TODOリストと位置情報をリアルタイムに紐付ける。
 ![インフラ構成図](./readme_images/インフラ構成図.jpg)
 
 ## 機能
-|ログイン|
-|-|
-|![login](./readme_images/login.png)|
-|簡単ログインとGoogleログインを実装|
+|ログイン|チュートリアル|Todoリスト
+|-|-|-|
+|![login](./readme_images/login.png)|![tutorial](./readme_images/チュートリアル.jpg)|![todo](./readme_images/todoリスト.jpg)
+|簡単ログインとGoogleログインを実装|実際に操作して体験できるチュートリアル|Todoリストを作成して作業を見える化
 
 ## ER図
 ![er](./readme_images/ER図.jpg)
-
-一旦プッシュ
