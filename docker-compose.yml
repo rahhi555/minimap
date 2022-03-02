@@ -23,6 +23,7 @@ services:
       - redis
     ports:
       - "3000:3000"
+    tty: true
     command: rake cmd:setup
 
   front:
@@ -31,16 +32,17 @@ services:
     container_name: portfolio-front
     volumes:
       - ./front:/front
+      - node_modules_volume:/front/node_modules
     ports:
       - "80:80"
     depends_on:
       - firebase
       - api
-    # command: yarn dev
+    command: yarn dev
     tty: true
-    env_file: .env
-    environment:
-      - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
+    # env_file: .env
+    # environment:
+    #   - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
 
   redis:
     image: redis:latest
@@ -58,3 +60,6 @@ services:
     working_dir: /opt/workspace
     command: "firebase emulators:start --import=./firebase/data --export-on-exit --project ucwork"
     tty: true
+
+volumes:
+  node_modules_volume:

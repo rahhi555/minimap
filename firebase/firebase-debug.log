@@ -1,0 +1,44 @@
+[debug] [2022-03-02T13:06:05.279Z] ----------------------------------------------------------------------
+[debug] [2022-03-02T13:06:05.294Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --import=./firebase/data --export-on-exit --project ucwork
+[debug] [2022-03-02T13:06:05.296Z] CLI Version:   9.16.5
+[debug] [2022-03-02T13:06:05.296Z] Platform:      linux
+[debug] [2022-03-02T13:06:05.296Z] Node Version:  v15.9.0
+[debug] [2022-03-02T13:06:05.316Z] Time:          Wed Mar 02 2022 13:06:05 GMT+0000 (Coordinated Universal Time)
+[debug] [2022-03-02T13:06:05.317Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-02T13:06:05.335Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-03-02T13:06:05.569Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] Failed to authenticate, have you run firebase login?
+[warn] ⚠  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[info] i  emulators: Starting emulators: auth {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth"}}
+[debug] [2022-03-02T13:06:05.733Z] [hub] writing locator at /tmp/hub-ucwork.json
+[info] i  auth: Importing config from /opt/workspace/firebase/data/auth_export/config.json {"metadata":{"emulator":{"name":"database"},"message":"Importing config from /opt/workspace/firebase/data/auth_export/config.json"}}
+[info] i  auth: Importing accounts from /opt/workspace/firebase/data/auth_export/accounts.json {"metadata":{"emulator":{"name":"database"},"message":"Importing accounts from /opt/workspace/firebase/data/auth_export/accounts.json"}}
+[info] i  ui: downloading ui-v1.6.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.6.2.zip..."}}
+[debug] [2022-03-02T13:06:21.246Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.2.zip 
+[debug] [2022-03-02T13:06:21.332Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-03-02T13:06:21.333Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-03-02T13:06:21.367Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.2.zip 200
+[debug] [2022-03-02T13:06:21.367Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.2.zip [stream]
+[debug] [2022-03-02T13:06:23.367Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-02T13:06:23.369Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-02T13:06:23.375Z] Starting Emulator UI with command {"binary":"node","args":["/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/root/.cache/firebase/emulators/ui-v1.6.2/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-03-02T13:06:23.952Z] Web / API server started at 0.0.0.0:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 0.0.0.0:4000\n"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://0.0.0.0:4000                  │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬──────────────┬──────────────────────────┐
+│ Emulator       │ Host:Port    │ View in Emulator UI      │
+├────────────────┼──────────────┼──────────────────────────┤
+│ Authentication │ 0.0.0.0:9099 │ http://0.0.0.0:4000/auth │
+└────────────────┴──────────────┴──────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
