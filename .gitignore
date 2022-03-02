@@ -41,7 +41,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-api
-front
-terraform
 .env
+.idea
