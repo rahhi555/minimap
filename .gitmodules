@@ -1,0 +1,9 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/rahhi555/portfolio-api.git
+[submodule "front"]
+	path = front
+	url = https://github.com/rahhi555/portfolio-front.git
+[submodule "terraform"]
+	path = terraform
+	url = https://github.com/rahhi555/portfolio-terraform.git
