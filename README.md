@@ -4,6 +4,14 @@
 - [Railsのリポジトリ](https://github.com/rahhi555/portfolio-api/tree/master)
 - [terraformのリポジトリ](https://github.com/rahhi555/portfolio-terraform/tree/master)
 
+## ローカル起動手順
+1. `git clone https://github.com/rahhi555/minimap.git`でこのリポジトリをローカルにクローンします
+2. `git submodule update --init`でサブモジュールのapi,front及びterraformディレクトリの中身をダウンロードします。
+3. このアプリケーションはgoogle maps apiを使用しているので、ご自身のapiキーを`.env`のYOUR_API_KEYの箇所に記述します。
+4. `docker-compose up`でコンテナのビルド及びスタートを実行します(この処理には通常数分かかります)。
+5. 起動し終えたら、localhostの80番ポートでブラウザからアクセスできます。
+6. api側のコンソールは`docker exec -it portfolio-api ash`、front側のコンソールは`docker exec -it portfolio-front ash`でアクセスできます。
+
 ## サービス概要
 現場で作業をする際に、離れた位置の人と仕事の進捗状況及び位置情報を共有できるサービスです。
 長方形を組み合わせて作業地域の簡単な平面図を作成していただき、作業リストを図形と紐付けることで視覚的に進捗状況が分かるようになっています。またピン立てやマーカーを引くこともでき、リアルタイムに情報共有が可能です。
