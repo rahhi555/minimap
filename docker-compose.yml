@@ -40,9 +40,9 @@ services:
       - api
     command: yarn dev
     tty: true
-    # env_file: .env
-    # environment:
-    #   - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
+    env_file: .env
+    environment:
+      - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
 
   redis:
     image: redis:latest
